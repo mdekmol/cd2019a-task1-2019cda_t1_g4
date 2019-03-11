@@ -1,5 +1,5 @@
 <h1>簡介</h1>
-<p>組員</p>
+<h2>組員</h2>
 <p><a href="https://github.com/40623102">40623102</a> 吳柔燕          <a href="https://github.com/40623124">40623124</a> 葉修宏</p>
 <p><a href="https://github.com/40623110">40623110</a> 翁俊揚          <a href="https://github.com/40623132">40623132</a> 趙家傑</p>
 <p><a href="https://github.com/40623111">40623111</a> 王映捷          <a href="https://github.com/40623144">40623144</a> 林昭權</p>
@@ -13,6 +13,15 @@
 <h2>第四週</h2>
 <p></p>
 <h1>可攜系統</h1>
-<h1>Kungit</h1>
+<h1>Ungit</h1>
+<p><span>ungit 是本學期重新啟用的倉儲管理工具, 因為在 </span><a href="https://drive.google.com/file/d/1Cw8mHRcHKIZj7K7_m6x_af4vzo89539a/view?usp=sharing">kmol_2019.7z</a><span><span> </span>中並未納入, 因此使用者配置 kmol_2019 可攜系統之後, 必須再下載<span> </span></span><a href="https://drive.google.com/file/d/1G3cEZsw6d7NjqLLgu9jljVNBd6wF-ZrG/view?usp=sharing">nodejs_with_ungit.7z</a><span>, 然後再設法配置, 直到能夠用 kungit.bat 啟動</span></p>
+<p><span><a href="https://github.com/FredrikNoren/ungit">https://github.com/FredrikNoren/ungit</a><span><span> </span>是一個以 node.js 編寫的 git 圖形化工具, 採用網際介面操作.</span><br/><br/><span>首先必須要先將 node.js 設為可攜, 並且在可以啟動 ungit 之後, 使用一連串的客製化處理, 讓使用者可以方便利用圖形化工具, 新增提交並推送各倉儲的改版內容</span></span></p>
+<h2><span><span>配置ungit</span></span></h2>
+<p><span><span><span style="background-color: #ffff00;">1.下載 ungit 與 node.js 程式碼</span><br/><br/><span>首先下載<span> </span></span><a href="https://drive.google.com/file/d/1Cw8mHRcHKIZj7K7_m6x_af4vzo89539a/view?usp=sharing">kmol_2019.7z</a><span>, 接著再下載<span> </span></span><a href="https://drive.google.com/file/d/1G3cEZsw6d7NjqLLgu9jljVNBd6wF-ZrG/view?usp=sharing">nodejs_with_ungit.7z</a><span>, 兩者分別解開壓縮檔案, 然後將 nodejs 放入 kmol_2019 的 data 目錄中.</span><br/><br/><span style="background-color: #ffff00;">2.設定命令列搜尋路徑</span><br/><br/><span>接下來設定啟動 start.bat 中的 ungit 命列列搜尋路徑</span><br/><br/></span></span></p>
+<p><span><span><span><img alt="" height="114" src="/images/ungit.png" width="1452"/><br/></span></span></span></p>
+<p><span><span><span><span style="background-color: #ffff00;"> 3.設定 USERPROFILE 環境變數</span><br/><br/><span>最後, 為了讓 node.js 能夠使用 y:\home 作為使用者目錄, 在 start.bat 中加入</span><br/><br/><span>set USERPROFILE=%Disk%:\home</span></span></span></span></p>
+<p><span><span><span><span><img alt="" height="93" src="/images/unit home.png" width="259"/></span></span></span></span></p>
+<p><span><span><span><span></span></span></span></span></p>
+<p></p>
 <p></p>
 <p></p>
