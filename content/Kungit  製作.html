@@ -1,0 +1,107 @@
+<!doctype html>
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>CMSimfly</title> <link rel="stylesheet" type="text/css" href="./../static/cmsimply.css">
+<script src="tipuesearch_content.js"></script>
+<script src="./../static/jquery.js"></script>
+<link rel="stylesheet" href="./../static/tipuesearch/css/tipuesearch.css">
+<script src="./../static/tipuesearch/tipuesearch_set.js"></script>
+<script src="./../static/tipuesearch/tipuesearch.min.js"></script>
+
+<script type="text/javascript" src="./../static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCSharp.js"></script>
+<link type="text/css" rel="stylesheet" href="./../static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- for LaTeX equations 暫時不用
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+-->
+<!-- 暫時不用
+<script src="./../static/fengari-web.js"></script>
+<script type="text/javascript" src="./../static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+
+<script type="text/javascript">
+/*shorthand of $(document).ready(function(){};); */
+$(function(){
+    $("ul.topmenu> li:has(ul) > a").append('<div class="arrow-right"></div>');
+    $("ul.topmenu > li ul li:has(ul) > a").append('<div class="arrow-right"></div>');
+});
+function doSearch() {
+     $('#tipue_search_input').tipuesearch({
+        newWindow: true, minimumLength: 2
+     });
+}
+$(document).ready(doSearch);
+</script>
+
+</head><header><h1>產品協同設計第4組</h1> <confmenu>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="sitemap.html">Site Map</a></li>
+<li><a href="./../reveal/index.html">reveal</a></li>
+<li><a href="./../blog/index.html">blog</a></li>
+
+</ul>
+</confmenu></header>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='簡介.html'>簡介</a><li><a href='課程內容.html'>課程內容</a><ul><li><a href='第一週.html'>第一週</a><li><a href='第二週.html'>第二週</a><li><a href='第三週.html'>第三週</a><li><a href='第四週.html'>第四週</a></li></ul><li><a href='可攜系統.html'>可攜系統</a><li><a href='Kungit  製作.html'>Kungit  製作</a></li></ul></nav><section><div id="tipue_search_content">可攜系統 << <a href='可攜系統.html'>Previous</a> <br /><h1>Kungit  製作</h1>
+<p>Step1.</p>
+<p>Open <a href="http://mde.tw/wcm2019/content/%E5%AF%A6%E7%BF%92%E9%A0%85%E7%9B%AE%E4%BA%8C.html">http://mde.tw/wcm2019/content/實習項目<img alt="" height="878" src="./../images/222.png" width="673"/>二.html</a>=&gt;Download  <strong><a href="https://drive.google.com/file/d/1G3cEZsw6d7NjqLLgu9jljVNBd6wF-ZrG/view?usp=sharing">nodejs_with_ungit.7z</a>  </strong>Put that into <strong>DATA</strong> document</p>
+<p><img alt="" height="458" src="./../images/121212120.png" width="659"/></p>
+<p>Step2. </p>
+<p><span>Use<strong> SciTE 編輯器</strong> edit<strong>  start_cadlab.bat </strong>and put </span></p>
+<p><span><strong>set path8=%Disk%:\nodejs;%Disk%:\nodejs\appdata\roaming\npm;</strong></span></p>
+<p><span><strong>set USERPROFILE=%Disk%:\home </strong></span></p>
+<p><span><strong>%path3%;    </strong></span><span>into  <strong>start_cadlab.bat</strong></span></p>
+<p><span><strong><img alt="" height="878" src="./../images/12150.png" width="560"/></strong></span></p>
+<p><img alt="" height="543" src="./../images/15212121.png" width="872"/></p>
+<p>Step3.</p>
+<p><span>Use</span><strong><span> </span>SciTE 編輯器</strong><span><span>  add </span></span></p>
+<p><span><span><strong>ungit --launchBrowser=0 --launchCommand "C:\PROGRA~2\Google\Chrome\Application\chrome.exe  %%U" </strong>save as <strong>kungit.bat</strong></span></span></p>
+<p><span><span><strong><img alt="" height="97" src="./../images/11111212.png" width="746"/></strong></span></span></p>
+<p><span><span>then we put that into Y:\</span></span></p>
+<p><span><span><img alt="" height="715" src="./../images/44444.png" width="864"/></span></span></p>
+<p><span><span>Step4.</span></span></p>
+<p><span><span>Open your <strong>Koml_2019 star.bat </strong>which place in </span></span><strong>Repositories</strong><svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewbox="0 0 12 16" width="12"><path d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z" fill-rule="evenodd"></path></svg><span><a class="btn btn-sm btn-primary text-white" data-ga-click="Dashboard, click, Sidebar header new repo button - context:user" data-hydro-click='{"event_type":"dashboard.click","payload":{"event_context":"REPOSITORIES","target":"NEW_REPOSITORY_BUTTON","dashboard_context":"user","dashboard_version":2,"user_id":33916168,"client_id":"161593203.1546824229","originating_request_id":"5592:176C:143107E:245CB75:5C8EF8C5","originating_url":"https://github.com/"}}' data-hydro-click-hmac="86324e69a07e7aa47a84b2c5ac7c55220fa91ad794b922a1d35d0eca96fb0796" href="https://github.com/new"> </a> </span></p>
+<p><span>Just type<strong> kungit</strong> to call this</span></p>
+<p><span><img alt="" height="538" src="./../images/12454.png" width="990"/></span></p>
+<p>Done .</p>
+<p><span><span><strong></strong></span></span></p>
+<p><span><span><strong> </strong></span></span></p>
+<p><strong> </strong></p>
+<p><span></span></p>
+<p></p><br />可攜系統 << <a href='可攜系統.html'>Previous</a> </div></section></div></body></html>
