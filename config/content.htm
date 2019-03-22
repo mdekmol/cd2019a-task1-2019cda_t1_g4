@@ -87,12 +87,27 @@
 <p><span><span><span><span></span></span></span></span></p>
 <p><span><span><span><span></span></span></span></span></p>
 <h1>Git手冊</h1>
-<h2>Git分支</h2>
+<h2>Git 分支</h2>
 <p>幾乎每一種版本控制系統（Version Control System，以下簡稱 VCS）都支援某種形式的分支（branch）功能， 使用分支意味著你可以從開發主線上分離開來，然後在不影響主線的情況下繼續工作。<br/>有人把 Git 的分支模型視為它的「殺手級功能」， 它有何特別之處呢？新建分支的操作幾乎可以在瞬間完成，並且一般來說切換不同分支也很快； 跟其它的 VCS 不一樣的地方是 Git 鼓勵在工作流程中頻繁地使用分支與合併（merge），即使一天之內進行許多次都沒問題。</p>
 <p><span style="background-color: #ffff00;">git branch 命令</span>:建立一個新的分支這會在目前提交上新建一個指標，它並不會切換到這個分支。</p>
 <p><span style="background-color: #ffff00;">git checkout 命令</span>:切換到一個已經存在的分支。</p>
 <p>*切換分支會修改工作目錄裡的檔案<br/>當你在 Git 中切換分支時，工作目錄內的檔案將會被修改； 如果切換到舊分支，你的工作目錄會回復到看起來就像當初你最後一次在這個分支提交時的樣子。 如果 Git 無法很乾淨地切換過去，它就不會讓你切換過去。</p>
 <p><span style="background-color: #ffff00;">git merge 命令</span>:緊急修正分支進行合併。</p>
-<p></p>
+<h2>Git Internals</h2>
+<h4>10.1<a href="https://git-scm.com/book/zh-tw/v2/Git-Internals-Plumbing-and-Porcelain">Plumbing and Porcelain</a></h4>
+<p>Git會創建一個git目錄用於備份或複製</p>
+<p>Git-Head文件：目前被檢出的分支/Index文件：暫存區信息/Refs目錄：指向數據（分支）/Objects目錄：所有數據內容</p>
+<h4>10.2<a href="https://git-scm.com/book/zh-tw/v2/Git-Internals-Git-Objects">Git Objects</a></h4>
+<p>cat-file：從git取回數據</p>
+<p>update-ref：更新使用</p>
+<h4>10.3<a href="https://git-scm.com/book/zh-tw/v2/Git-Internals-Git-References">Git References</a></h4>
+<p>執行git branch--cat.git/Head</p>
+<p>                                     ref：refs/heads/master</p>
+<p>執行git checkout test--cat.git/Head</p>
+<p>                                     <span>ref：refs/heads/test</span></p>
+<p>Remotes<span>：git push origin master ：推送上一次分支</span></p>
+<h4><span>10.5<a href="https://git-scm.com/book/zh-tw/v2/Git-Internals-The-Refspec">The Refspec</a></span></h4>
+<p><span></span>git push origin<span>：topic</span></p>
+<p><span>git push origin--delete topic</span></p>
 <p></p>
 <p></p>
