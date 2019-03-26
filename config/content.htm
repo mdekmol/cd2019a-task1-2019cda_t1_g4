@@ -139,7 +139,8 @@
 <h2>內容簡介</h2>
 <p>在創建Sphere時，要取消<span style="color: #ff0000;">create dynamic and respondable shape</span> 要是沒取消的話，Sphere會是dynamic(<span>☑</span><span>Body is dynamic</span>)，會利用上面的Bullet2.78 engine去執行。</p>
 <p>V-rep本身沒有dynamic分析的能力。</p>
-<p>把要放入機器人的機械或元件寫成model，這樣才會有版本可言。</p><h2>操作方式</h2>
+<p>把要放入機器人的機械或元件寫成model，這樣才會有版本可言。</p>
+<h2>操作方式</h2>
 <p><img alt="" height="35" src="/images/vrep_2019-03-26_00-03-24.png" width="33"/>可開啟數學計算式，裡面的Collision跟Distance是Bubble Rob所具備的東西。</p>
 <p><img alt="" height="41" src="/images/vrep_2019-03-26_00-04-00.png" width="36"/>可平移物體的x,y,z軸。</p>
 <p><img alt="" height="39" src="/images/vrep_2019-03-26_00-04-11.png" width="32"/>可旋轉物體的方向。</p>
@@ -150,3 +151,15 @@
 <p><span>快點Sphere前面的方格兩下➔Shape➔Adjust color➔Ambient/diffuse component(<span style="color: #ff0000;">可調色</span>)</span></p>
 <p><span><span>快點Sphere前面的方格兩下➔Common➔☑Object is model base(<span style="color: #ff0000;">變成model</span>)</span></span></p>
 <p><span><span>快點Sphere前面的方格兩下➔Common<span>➔</span><span>☑Object/model can transfer or accept DNA(<span style="color: #ff0000;">model可用程式輸入</span>)</span></span></span></p>
+<h2>Cone Proximity Sensor</h2>
+<p>Menu bar<span>➔add➔proximity sensor➔cone type就可以創建一個錐形的接近傳感器。</span></p>
+<p><span><img alt="" height="210" src="/images/vrep_2019-03-26_22-07-47.png" width="300"/></span></p>
+<p><span></span>設定proximity sensor<span>➔快點前面的圖示兩下➔<span style="color: #ff0000;">Show volume parameters</span>➔可調整</span></p>
+<p><span>➔Offset(偏移)</span></p>
+<p><span><img alt="" height="210" src="/images/vrep_2019-03-26_22-08-05.png" width="300"/></span></p>
+<p><span>➔Range(範圍)</span></p>
+<p><span><img alt="" height="210" src="/images/vrep_2019-03-26_22-08-31.png" width="300"/></span></p>
+<p><span>➔Angle(角度)</span></p>
+<p><span><img alt="" height="210" src="/images/vrep_2019-03-26_22-08-45.png" width="300"/></span></p>
+<p><span>設定proximity sensor<span>➔快點前面的圖示兩下➔<span style="color: #ff0000;">Show detection parameters</span></span></span></p>
+<p><span style="color: #000000;">➔把Don't allow detections if distance smaller than的打勾取消掉，這串字的意思是如果距離小於此時則不允許檢測。</span></p>
