@@ -8,15 +8,6 @@
 <p><a href="https://github.com/40623113">40623113</a> 吳承哲          <a href="https://github.com/40623152">40623152</a> 潘季宏</p>
 <p><a href="https://github.com/40623121">40623121</a> 蔡朝旭          <a href="https://github.com/40623157">40623157</a> 李昀霖</p>
 <p></p>
-<h1>課程內容</h1>
-<h2>第一週</h2>
-<p>建立可攜系統</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/uEq_GtkkPx8" width="560"></iframe></p>
-<h2>第二週</h2>
-<h2>第三週</h2>
-<h2>第四週</h2>
-<h2>第五週</h2>
-<p></p>
 <h1>可攜系統</h1>
 <h2>SSH步驟</h2>
 <p>1.利用cmd.exe(小黑窗)</p>
@@ -277,19 +268,14 @@ group 7:
 &gt;Exit code: 0</pre>
 <p><span style="background-color: #ffff00;">使用的cdaw1_student_list.txt檔案:</span></p>
 <p>40423111<br/>40423122<br/>40423142<br/>40423159<br/>40423160<br/>40423214<br/>40423218<br/>40423249<br/>40623101<br/>40623102<br/>40623105<br/>40623107<br/>40623108<br/>40623109<br/>40623110<br/>40623111<br/>40623112<br/>40623113<br/>40623114<br/>40623115<br/>40623116<br/>40623117<br/>40623118<br/>40623119<br/>40623121<br/>40623122<br/>40623124<br/>40623125<br/>40623127<br/>40623128<br/>40623129<br/>40623130<br/>40623131<br/>40623132<br/>40623133<br/>40623134<br/>40623135<br/>40623136<br/>40623137<br/>40623138<br/>40623139<br/>40623140<br/>40623141<br/>40623142<br/>40623144<br/>40623145<br/>40623146<br/>40623147<br/>40623150<br/>40623152<br/>40623153<br/>40623154<br/>40623155<br/>40623156<br/>40623157<br/>40623158</p>
-<h2>實習任務二</h2>
-<p><a href="http://www.coppeliarobotics.com/helpFiles/en/bubbleRobTutorial.htm">翻譯</a></p>
-<p><a href="https://git-scm.com/book/zh-tw/v2">研讀Git 教材重點</a></p>
-<p><span><span><span><span></span></span></span></span></p>
-<p><span><span><span><span></span></span></span></span></p>
-<h1>Git手冊</h1>
-<h2>Git 分支</h2>
+<h3>Git手冊</h3>
+<h4>Git 分支</h4>
 <p>幾乎每一種版本控制系統（Version Control System，以下簡稱 VCS）都支援某種形式的分支（branch）功能， 使用分支意味著你可以從開發主線上分離開來，然後在不影響主線的情況下繼續工作。<br/>有人把 Git 的分支模型視為它的「殺手級功能」， 它有何特別之處呢？新建分支的操作幾乎可以在瞬間完成，並且一般來說切換不同分支也很快； 跟其它的 VCS 不一樣的地方是 Git 鼓勵在工作流程中頻繁地使用分支與合併（merge），即使一天之內進行許多次都沒問題。</p>
 <p><span style="background-color: #ffff00;">git branch 命令</span>:建立一個新的分支這會在目前提交上新建一個指標，它並不會切換到這個分支。</p>
 <p><span style="background-color: #ffff00;">git checkout 命令</span>:切換到一個已經存在的分支。</p>
 <p>*切換分支會修改工作目錄裡的檔案<br/>當你在 Git 中切換分支時，工作目錄內的檔案將會被修改； 如果切換到舊分支，你的工作目錄會回復到看起來就像當初你最後一次在這個分支提交時的樣子。 如果 Git 無法很乾淨地切換過去，它就不會讓你切換過去。</p>
 <p><span style="background-color: #ffff00;">git merge 命令</span>:緊急修正分支進行合併。</p>
-<h2>Git Internals</h2>
+<h4>Git Internals</h4>
 <h4>10.1<a href="https://git-scm.com/book/zh-tw/v2/Git-Internals-Plumbing-and-Porcelain">Plumbing and Porcelain</a></h4>
 <p>Git會創建一個git目錄用於備份或複製</p>
 <p>Git-Head文件：目前被檢出的分支/Index文件：暫存區信息/Refs目錄：指向數據（分支）/Objects目錄：所有數據內容</p>
@@ -325,11 +311,14 @@ group 7:
 </div>
 <div class="paragraph">
 <p><strong><code>GIT_COMMITTER_DATE</code></strong><span><span><span> </span>用於“提交者”字段中的日期。</span></span></p>
-<h2>Git and Other Systems</h2>
+<h4>Git and Other Systems</h4>
 <h4>9.1<a href="https://git-scm.com/book/zh-tw/v2/Git-and-Other-Systems-Git-as-a-Client">Git as a Client</a></h4>
 <p>git svn：<span>Git中所有Subversion橋接指令的基本指令都是</span><code>git svn</code><span><span>。</span><span>它需要相當多的指令，因此我們將在完成一些簡單的工作流程時展示最常見的指令。當用戶使用git svn時，需特別注意避免同時與Git遠端倉儲交互操作使用。</span></span></p>
+<h2>實習任務二</h2>
+<p><a href="http://www.coppeliarobotics.com/helpFiles/en/bubbleRobTutorial.htm">翻譯</a></p>
+<p><a href="https://git-scm.com/book/zh-tw/v2">研讀Git 教材重點</a></p>
 <p></p>
-<h1>V-rep</h1>
+<h3>V-rep</h3>
 <p><img alt="" height="187" src="/images/vrep.png" width="274"/></p>
 <p>V-rep的操作手冊:</p>
 <p><a href="http://www.coppeliarobotics.com/helpFiles/">http://www.coppeliarobotics.com/helpFiles/</a> </p>
@@ -337,11 +326,11 @@ group 7:
 <p><a href="http://www.coppeliarobotics.com/helpFiles/en/tutorials.htm">http://www.coppeliarobotics.com/helpFiles/en/tutorials.htm</a></p>
 <p>BubbleRob tutorial:</p>
 <p><a href="http://www.coppeliarobotics.com/helpFiles/en/bubbleRobTutorial.htm">http://www.coppeliarobotics.com/helpFiles/en/bubbleRobTutorial.htm</a></p>
-<h2>內容簡介</h2>
+<h4>內容簡介</h4>
 <p>在創建Sphere時，要取消<span style="color: #ff0000;">create dynamic and respondable shape</span> 要是沒取消的話，Sphere會是dynamic(<span>☑</span><span>Body is dynamic</span>)，會利用上面的Bullet2.78 engine去執行。</p>
 <p>V-rep本身沒有dynamic分析的能力。</p>
 <p>把要放入機器人的機械或元件寫成model，這樣才會有版本可言。</p>
-<h2>操作方式</h2>
+<h4>操作方式</h4>
 <p><img alt="" height="35" src="/images/vrep_2019-03-26_00-03-24.png" width="33"/>可開啟數學計算式，裡面的Collision跟Distance是Bubble Rob所具備的東西。</p>
 <p><img alt="" height="41" src="/images/vrep_2019-03-26_00-04-00.png" width="36"/>可平移物體的x,y,z軸。</p>
 <p><img alt="" height="39" src="/images/vrep_2019-03-26_00-04-11.png" width="32"/>可旋轉物體的方向。</p>
@@ -352,7 +341,7 @@ group 7:
 <p><span>快點Sphere前面的方格兩下➔Shape➔Adjust color➔Ambient/diffuse component(<span style="color: #ff0000;">可調色</span>)</span></p>
 <p><span><span>快點Sphere前面的方格兩下➔Common➔☑Object is model base(<span style="color: #ff0000;">變成model</span>)</span></span></p>
 <p><span><span>快點Sphere前面的方格兩下➔Common<span>➔</span><span>☑Object/model can transfer or accept DNA(<span style="color: #ff0000;">model可用程式輸入</span>)</span></span></span></p>
-<h2>Cone Proximity Sensor</h2>
+<h4>Cone Proximity Sensor</h4>
 <p>Menu bar<span>➔add➔proximity sensor➔cone type就可以創建一個錐形的接近傳感器。</span></p>
 <p><span><img alt="" height="210" src="/images/vrep_2019-03-26_22-07-47.png" width="300"/></span></p>
 <p><span></span>設定proximity sensor<span>➔快點前面的圖示兩下➔<span style="color: #ff0000;">Show volume parameters</span>➔可調整</span></p>
@@ -364,7 +353,7 @@ group 7:
 <p><span><img alt="" height="210" src="/images/vrep_2019-03-26_22-08-45.png" width="300"/></span></p>
 <p><span>設定proximity sensor<span>➔快點前面的圖示兩下➔<span style="color: #ff0000;">Show detection parameters</span></span></span></p>
 <p><span style="color: #000000;">➔把Don't allow detections if distance smaller than的打勾取消掉，這串字的意思是如果距離小於此時則不允許檢測。</span></p>
-<h1>BubbleRob</h1>
+<h3>BubbleRob</h3>
 <p><span></span><span><span><span><span><span><span>1.建立BubbleRob本體<br/><span>新增一個</span><span>Sphere</span><span>，</span><span>X-size</span><span>為</span><span>0.2(</span><span>單位為m)</span><br/><span>在</span><span>object common properties</span><span>下的</span><span>object special properties</span><span>將</span><span>Collidable、Measurable、Renderable、Detectable</span><span>都打勾，將本體位置設定在Z軸(Along Z)0.02(須確認本體是照world移動)</span><span>接著在選單雙擊Sphere將物件名稱改為BubbleRob就完成本體設定。</span></span></span></span></span></span></span></p>
 <p><span><span><span><span><span><span><br/><img alt="" height="111" src="/images/1.png" width="362"/><br/></span></span></span></span></span></span></p>
 <p><span><span><span><span><span><span><br/><br/><span>2.建立Proxmity sensor</span><br/><span>在選單中建立一個</span><span>Proximity sensor</span><span>且選為</span><span>Cone type</span><span>將sensor利用旋轉功能在</span><span>Around Y及Z</span><span>輸入</span><span>90</span><span>位置為</span><span>X-coord</span><span>輸入</span><span>0.1</span><span>及</span><span>Z-coord</span><span>輸入</span><span>0.12</span></span></span></span></span></span></span></p>
@@ -406,8 +395,9 @@ group 7:
 <p><span><span><span><span><span><span><br/><span>leftMotor=sim.getObjectHandle("</span><span>bubbleRob_leftMotor</span><span>") -- Handle of the left motor</span><br/><span>rightMotor=sim.getObjectHandle("</span><span>bubbleRob_rightMotor</span><span>") -- Handle of the right motor</span><br/><span>noseSensor=sim.getObjectHandle("</span><span>bubbleRob_sensingNose</span><span>") -- Handle of the proximity sensor</span><br/><span>紅框內的名稱，如果大小寫或是名稱不同程式就沒辦法成功執行。</span></span></span></span></span></span></span></p>
 <p><span><span><span><span><span><span><br/></span></span></span></span></span></span><span><span><span><span><span><span><img alt="" height="858" src="/images/24.png" width="1461"/><br/><span></span></span></span></span></span></span></span></p>
 <p><span><span><span><span><span><span><span>bubbleRob在模擬時會自動避開路徑上的物件，且畫面有能調節速度的面板。</span><br/><br/><br/><br/></span></span></span></span></span></span></p>
-<h1><span><span><span><span><span><span>football table</span></span></span></span></span></span></h1>
+<h3><span><span><span><span><span><span>football table</span></span></span></span></span></span></h3>
 <p><span><span><span><span><span><span>台桌繪製影片（簡易版）：<br/><br/><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="//www.youtube.com/embed/zJDJhRIkwFI" width="560"></iframe><br/><br/></span></span></span></span></span></span></p>
-<p><span><span><span><span><span><span></span></span></span></span></span></span></p>
+<p><span><span><span><span><span><span>球員繪製影片：</span></span></span></span></span></span></p>
+<p><span><span><span><span><span><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/k035bbu9-_Q" width="560"></iframe></span></span></span></span></span></span></p>
 <p><span><span><span><span><span><span></span></span></span></span></span></span></p>
 </div>
