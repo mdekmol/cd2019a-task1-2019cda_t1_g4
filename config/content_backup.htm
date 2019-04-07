@@ -269,13 +269,13 @@ group 7:
 <p><span style="background-color: #ffff00;">使用的cdaw1_student_list.txt檔案:</span></p>
 <p>40423111<br/>40423122<br/>40423142<br/>40423159<br/>40423160<br/>40423214<br/>40423218<br/>40423249<br/>40623101<br/>40623102<br/>40623105<br/>40623107<br/>40623108<br/>40623109<br/>40623110<br/>40623111<br/>40623112<br/>40623113<br/>40623114<br/>40623115<br/>40623116<br/>40623117<br/>40623118<br/>40623119<br/>40623121<br/>40623122<br/>40623124<br/>40623125<br/>40623127<br/>40623128<br/>40623129<br/>40623130<br/>40623131<br/>40623132<br/>40623133<br/>40623134<br/>40623135<br/>40623136<br/>40623137<br/>40623138<br/>40623139<br/>40623140<br/>40623141<br/>40623142<br/>40623144<br/>40623145<br/>40623146<br/>40623147<br/>40623150<br/>40623152<br/>40623153<br/>40623154<br/>40623155<br/>40623156<br/>40623157<br/>40623158</p>
 <h3>Git手冊</h3>
-<h4>Git 分支</h4>
+<h4><span style="background-color: #00ff00;">Git 分支</span></h4>
 <p>幾乎每一種版本控制系統（Version Control System，以下簡稱 VCS）都支援某種形式的分支（branch）功能， 使用分支意味著你可以從開發主線上分離開來，然後在不影響主線的情況下繼續工作。<br/>有人把 Git 的分支模型視為它的「殺手級功能」， 它有何特別之處呢？新建分支的操作幾乎可以在瞬間完成，並且一般來說切換不同分支也很快； 跟其它的 VCS 不一樣的地方是 Git 鼓勵在工作流程中頻繁地使用分支與合併（merge），即使一天之內進行許多次都沒問題。</p>
 <p><span style="background-color: #ffff00;">git branch 命令</span>:建立一個新的分支這會在目前提交上新建一個指標，它並不會切換到這個分支。</p>
 <p><span style="background-color: #ffff00;">git checkout 命令</span>:切換到一個已經存在的分支。</p>
 <p>*切換分支會修改工作目錄裡的檔案<br/>當你在 Git 中切換分支時，工作目錄內的檔案將會被修改； 如果切換到舊分支，你的工作目錄會回復到看起來就像當初你最後一次在這個分支提交時的樣子。 如果 Git 無法很乾淨地切換過去，它就不會讓你切換過去。</p>
 <p><span style="background-color: #ffff00;">git merge 命令</span>:緊急修正分支進行合併。</p>
-<h4>Git Internals</h4>
+<h4><span style="background-color: #00ff00;">Git Internals</span></h4>
 <h4>10.1<a href="https://git-scm.com/book/zh-tw/v2/Git-Internals-Plumbing-and-Porcelain">Plumbing and Porcelain</a></h4>
 <p>Git會創建一個git目錄用於備份或複製</p>
 <p>Git-Head文件：目前被檢出的分支/Index文件：暫存區信息/Refs目錄：指向數據（分支）/Objects目錄：所有數據內容</p>
@@ -311,7 +311,7 @@ group 7:
 </div>
 <div class="paragraph">
 <p><strong><code>GIT_COMMITTER_DATE</code></strong><span><span><span> </span>用於“提交者”字段中的日期。</span></span></p>
-<h4>Git and Other Systems</h4>
+<h4><span style="background-color: #00ff00;">Git and Other Systems</span></h4>
 <h4>9.1<a href="https://git-scm.com/book/zh-tw/v2/Git-and-Other-Systems-Git-as-a-Client">Git as a Client</a></h4>
 <p>git svn：<span>Git中所有Subversion橋接指令的基本指令都是</span><code>git svn</code><span><span>。</span><span>它需要相當多的指令，因此我們將在完成一些簡單的工作流程時展示最常見的指令。當用戶使用git svn時，需特別注意避免同時與Git遠端倉儲交互操作使用。</span></span></p>
 <h2>實習任務二</h2>
@@ -326,11 +326,11 @@ group 7:
 <p><a href="http://www.coppeliarobotics.com/helpFiles/en/tutorials.htm">http://www.coppeliarobotics.com/helpFiles/en/tutorials.htm</a></p>
 <p>BubbleRob tutorial:</p>
 <p><a href="http://www.coppeliarobotics.com/helpFiles/en/bubbleRobTutorial.htm">http://www.coppeliarobotics.com/helpFiles/en/bubbleRobTutorial.htm</a></p>
-<h4>內容簡介</h4>
+<h4><span style="background-color: #00ff00;">內容簡介</span></h4>
 <p>在創建Sphere時，要取消<span style="color: #ff0000;">create dynamic and respondable shape</span> 要是沒取消的話，Sphere會是dynamic(<span>☑</span><span>Body is dynamic</span>)，會利用上面的Bullet2.78 engine去執行。</p>
 <p>V-rep本身沒有dynamic分析的能力。</p>
 <p>把要放入機器人的機械或元件寫成model，這樣才會有版本可言。</p>
-<h4>操作方式</h4>
+<h4><span style="background-color: #00ff00;">操作方式</span></h4>
 <p><img alt="" height="35" src="/images/vrep_2019-03-26_00-03-24.png" width="33"/>可開啟數學計算式，裡面的Collision跟Distance是Bubble Rob所具備的東西。</p>
 <p><img alt="" height="41" src="/images/vrep_2019-03-26_00-04-00.png" width="36"/>可平移物體的x,y,z軸。</p>
 <p><img alt="" height="39" src="/images/vrep_2019-03-26_00-04-11.png" width="32"/>可旋轉物體的方向。</p>
@@ -399,5 +399,5 @@ group 7:
 <p><span><span><span><span><span><span>台桌繪製影片（簡易版）：<br/><br/><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="//www.youtube.com/embed/zJDJhRIkwFI" width="560"></iframe><br/><br/></span></span></span></span></span></span></p>
 <p><span><span><span><span><span><span>球員繪製影片：</span></span></span></span></span></span></p>
 <p><span><span><span><span><span><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/k035bbu9-_Q" width="560"></iframe></span></span></span></span></span></span></p>
-<p><span><span><span><span><span><span></span></span></span></span></span></span></p>
+<h2>實習任務三</h2>
 </div>
