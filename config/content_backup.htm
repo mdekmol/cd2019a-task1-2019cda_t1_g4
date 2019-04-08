@@ -1,7 +1,8 @@
 <h1>簡介</h1>
 <p><a href="/downloads/手天使.stl">手足球</a></p>
 <p><a href="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4">ag4倉儲</a></p>
-<p><a href="https://cda2019ag4.blogspot.com/">blogger</a></p><h2>組員</h2>
+<p><a href="https://cda2019ag4.blogspot.com/">blogger</a></p>
+<h2>組員</h2>
 <p><a href="https://github.com/40623102">40623102</a> 吳柔燕          <a href="https://github.com/40623124">40623124</a> 葉修宏</p>
 <p><a href="https://github.com/40623110">40623110</a> 翁俊揚          <a href="https://github.com/40623132">40623132</a> 趙家傑</p>
 <p><a href="https://github.com/40623111">40623111</a> 王映捷          <a href="https://github.com/40623144">40623144</a> 林昭權</p>
@@ -406,6 +407,14 @@ group 7:
 <p><span><span><span><span><span><span>球員繪製影片：</span></span></span></span></span></span></p>
 <p><span><span><span><span><span><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/k035bbu9-_Q" width="560"></iframe></span></span></span></span></span></span></p>
 <h2>實習任務三</h2>
+<h3>簡化網格的方法</h3>
+<p><br/><span style="background-color: #ffff00;">注意</span>:方法中的第一項，應始終首先嘗試，這在大部分的情況下能簡化網格的幾何圖形。(如果不起作用請嘗試手動網格劃分)</p>
+<p><br/><span style="background-color: #00ffff;">Automatic mesh division(自動網格劃分)</span>:所有未通過公共邊緣連結的元素生成新形狀，並不總是適用於選定的網格，可從 [Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Divide selected shapes]進行；有時網格的形狀會超過預期，此時只需將邏輯上屬於一起的元素(即具有相同的視覺屬性且屬於同一連結的元素)合併回一個形狀即可，可從[Menu bar --&gt; Edit -&gt; Grouping/Merging --&gt; Merge selected shapes])進行。</p>
+<p><span style="background-color: #00ffff;">Extract the convex hull(提取凸殼)</span>:將網格轉換為凸殼來簡化網格，可從[Menu bar --&gt; Edit --&gt; Morph selection into convex shapes]進行。</p>
+<p><br/><span style="background-color: #00ffff;">Decimate the mesh(對網格進行解碼)</span>:可減少網格中包含的三角形數量，可從[Menu bar --&gt; Edit --&gt; Decimate selected shape...]進行。</p>
+<p><br/><span style="background-color: #00ffff;">Remove the inside of the mesh(移除網格的內部)</span>:此功能基於視覺感應器，根據所選的設置給出或多或少令人滿意的結果，可從 [Menu bar --&gt; Edit --&gt; Extract inside of selected shape]進行。</p>
+<p><br/><span style="background-color: #00ffff;">Manual mesh division(手動網格劃分)</span>:通過三角形編輯模式(以下說明)，可以手動選擇三角形，而不是邏輯上屬於一起，然後按一下 "提取形狀"，將會在場景中生成一個新形狀，操作後需刪除選定的三角形。</p>
+<p><br/><span style="background-color: #ffffff; color: #ff6600;">三角形編輯模式</span>:只需按一下相應的工具列按鈕，即可開啟三角形編輯模式，在三角形編輯模式下，將單獨顯示構成形狀的所有三角形，三角形有兩個面，正面和後面。正面顯示為藍色，背面顯示為紅色，選擇三角形時，三角形將以黃色顯示，最後一個選定的三角形將顯示為白色，可使用ESC鍵來取消所選內容。</p>
 <h1>問題與討論</h1>
 <h4>所有頁面會因無法正確解讀而誤刪</h4>
 <p><span>在特定情況下, 系統會誤刪 config/content.htm 檔案, 目前在單頁或全部頁面編輯存檔之前, 或將上一版本的 content.htm 存入 content_back.htm, 若 content.htm 內容被程式誤刪, 可以利用備份檔案複製回原始內容後, 再進行後續處理</span></p>
