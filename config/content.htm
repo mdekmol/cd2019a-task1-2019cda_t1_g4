@@ -324,7 +324,7 @@ group 7:
 <p><a href="https://git-scm.com/book/zh-tw/v2">研讀Git 教材重點</a></p>
 <p></p>
 <h3>V-rep</h3>
-<p><img alt="" height="187" src="/images/vrep.png" width="274"/></p>
+<h4><img alt="" height="187" src="/images/vrep.png" width="274"/></h4>
 <p>V-rep的操作手冊:</p>
 <p><a href="http://www.coppeliarobotics.com/helpFiles/">http://www.coppeliarobotics.com/helpFiles/</a> </p>
 <p>V-rep Tutorial:</p>
@@ -358,7 +358,36 @@ group 7:
 <p><span><img alt="" height="210" src="/images/vrep_2019-03-26_22-08-45.png" width="300"/></span></p>
 <p><span>設定proximity sensor<span>➔快點前面的圖示兩下➔<span style="color: #ff0000;">Show detection parameters</span></span></span></p>
 <p><span style="color: #000000;">➔把Don't allow detections if distance smaller than的打勾取消掉，這串字的意思是如果距離小於此時則不允許檢測。</span></p>
-<h3>BubbleRob</h3>
+<h3>v-rep 設計動態模擬</h3>
+<p>在<span>V-REP</span>中，僅動態模擬有限數量的物件<span>(objects)</span>。這些是 shapes,joints和 force sensors，但它將取決於<span><a href="http://www.coppeliarobotics.com/helpFiles/en/scenes.htm">場景</a></span>結構和物體屬性，是否將動態模擬給定物件。在<span><a href="http://www.coppeliarobotics.com/helpFiles/en/simulation.htm">模擬</a></span>過程中可以輕鬆識別動態模擬對象，因為在<span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">場景層次結構中</a>(</span>scene hierarchy)對象名稱旁邊會出現以下圖標：</p>
+<p><img caption="false" height="64" src="/images/99.jpg" width="80"/></p>
+<p>點擊場景層次結構中的圖標（僅在模擬期間）將顯示與對象的動態行為相關的一些信息。應該通過動態模擬但由於某種原因無法動態模擬的對象將顯示以下圖標：</p>
+<p><img alt="" height="64" src="/images/98.jpg" width="80"/></p>
+<h5><strong>Static/non-static, respondable/non-respondable shapes</strong></h5>
+<p> 根據動態模擬過程中的行為，物件可分為<span>4</span>組：</p>
+<p><img alt="" height="127" src="/images/97.jpg" width="253"/></p>
+<p>在動態模擬期間，靜態形式不會受到影響（即它們相對於其從屬物件的位置是固定的），而非靜態物件將直接受到重力或其他約束（例如，動態啟用的關節，見下文）的影響。可響應的物件在動態碰撞期間相互影響（即它們產生相互<em>碰撞反應</em>，它們將相互反彈）。下圖說明了靜態<span>/</span>非靜態，可連動<span>/</span>不可連動的行為：</p>
+<p><img alt="" height="251" src="/images/96.jpg" width="524"/></p>
+<p>[靜態<span>/</span>非靜態，可連動<span>/</span>不可連動的形式行為和交互<span>]</span></p>
+<p> 兩個可連動的物件將一直產生碰撞反應，除非它們各自的碰撞互相不重疊。可以在shape dynamics properties對話框中設置靜態<span>/</span>非靜態，可連動<span>/</span>不可連動的形狀屬性以及隱藏碰撞</p>
+<h4><strong>Dynamically enabled joints/force sensor</strong></h4>
+<p>如果沒有其他限制，非靜態物件將下降（即受重力影響）。可以通過將兩個物件與<em>動態啟用的</em><span> <a href="http://www.coppeliarobotics.com/helpFiles/en/joints.htm"><span>關節</span></a></span>或<em>動態啟用的</em><span> <a href="http://www.coppeliarobotics.com/helpFiles/en/forceSensors.htm"><span>力傳感器</span></a></span>連接在一起來設置物件之間的動態約束。</p>
+<p>動態啟用的關節是處於力或扭矩模式的關節或以混合方式操作的<span><a href="http://www.coppeliarobotics.com/helpFiles/en/jointProperties.htm"><span>關節</span></a></span>（參見<span><a href="http://www.coppeliarobotics.com/helpFiles/en/jointProperties.htm"><span>關節屬性</span></a></span>），並且具有作為從屬的物件和正好一個必須是非靜態物件的子物件。另外，可以在<em>環閉合配置中</em>涉及關節。在這種情況下，關節必須通過<span><a href="http://www.coppeliarobotics.com/helpFiles/en/dummies.htm"><span>虛擬 - </span><span>虛擬</span></a></span>鏈接連接到兩個形狀（其中鏈接類型必須是動態，重疊約束）。對於虛擬虛擬鏈接，請參閱<span><a href="http://www.coppeliarobotics.com/helpFiles/en/dummyPropertiesDialog.htm"><span>虛擬屬性</span></a></span>。</p>
+<p>動態啟用的力傳感器是力傳感器，其具有作為物件的物件和恰好一個必須是非靜態形式的子物件。另外，可以將力傳感器包括在<em>環閉合配置中</em>。在這種情況下，力傳感器必須通過<span><a href="http://www.coppeliarobotics.com/helpFiles/en/dummies.htm"><span>虛擬 - </span><span>虛擬</span></a></span>鏈接（其中鏈接類型必須是動態，重疊約束）連接到兩個物件。對於虛擬鏈接，請參閱<span><a href="http://www.coppeliarobotics.com/helpFiles/en/dummyPropertiesDialog.htm"><span>虛擬屬性</span></a></span>。</p>
+<p>下圖顯示了關節或力傳感器被認為是動態啟用的有效情況（假設關節<span>/</span>力傳感器和兩個物件位於動態模擬的<span><a href="http://www.coppeliarobotics.com/helpFiles/en/models.htm"><span>模型</span></a></span>中，這是默認情況）：</p>
+<p><img alt="" height="254" src="/images/95.jpg" width="600"/></p>
+<p><img alt="" height="136" src="/images/94.jpg" width="592"/></p>
+<p>按照上述指南非常重要，以獲得動態啟用的關節或力傳感器。在模擬過程中，如果<span>V-REP</span>發現未動態啟用的力傳感器，它將在場景<span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">層次結構視圖</a></span>中的名稱旁邊顯示一個小警告圖標。對於力<span>/</span>扭矩模式中的關節或者應該以混合方式操作並且不是動態啟用的關節也是如此。</p>
+<p>以下是一些不會動態啟用關節的示例情況：</p>
+<p> 接頭不是有力或扭矩模式，接頭不是以混合方式運行。</p>
+<p> 關節的從屬沒有形式。</p>
+<p>關節有多個子物件。</p>
+<p>關節直接連接到另一個關節。</p>
+<p>關節（或它連接的兩種形式之一）位於未動態模擬的<span><a href="http://www.coppeliarobotics.com/helpFiles/en/models.htm"><span>模型</span></a></span>中</p>
+<p>以下是一些不會動態啟用力傳感器的示例情況：</p>
+<p>力傳感器的從屬沒有形式。</p>
+<p>力傳感器有多個子物件。</p>
+<p>力傳感器（或它連接的兩種形式之一）位於未動態模擬的<span><a href="http://www.coppeliarobotics.com/helpFiles/en/models.htm"><span>模型</span></a></span>中。</p><h3>BubbleRob</h3>
 <p><span></span><span><span><span><span><span><span>1.建立BubbleRob本體<br/><span>新增一個</span><span>Sphere</span><span>，</span><span>X-size</span><span>為</span><span>0.2(</span><span>單位為m)</span><br/><span>在</span><span>object common properties</span><span>下的</span><span>object special properties</span><span>將</span><span>Collidable、Measurable、Renderable、Detectable</span><span>都打勾，將本體位置設定在Z軸(Along Z)0.02(須確認本體是照world移動)</span><span>接著在選單雙擊Sphere將物件名稱改為BubbleRob就完成本體設定。</span></span></span></span></span></span></span></p>
 <p><span><span><span><span><span><span><br/><img alt="" height="111" src="/images/1.png" width="362"/><br/></span></span></span></span></span></span></p>
 <p><span><span><span><span><span><span><br/><br/><span>2.建立Proxmity sensor</span><br/><span>在選單中建立一個</span><span>Proximity sensor</span><span>且選為</span><span>Cone type</span><span>將sensor利用旋轉功能在</span><span>Around Y及Z</span><span>輸入</span><span>90</span><span>位置為</span><span>X-coord</span><span>輸入</span><span>0.1</span><span>及</span><span>Z-coord</span><span>輸入</span><span>0.12</span></span></span></span></span></span></span></p>
