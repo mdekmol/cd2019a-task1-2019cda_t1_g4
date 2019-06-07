@@ -56,14 +56,16 @@
 <p><span style="background-color: #ff9900;"><span>*為了使球能不因為速度過快而彈至軌道外，而將軌道坡度減緩至10度左右。</span></span></p>
 <p><span style="background-color: #ff9900;"><span><img alt="" height="385" src="/images/v.png" width="593"/></span></span></p>
 <p>8.送球機構</p>
-<p><span></span></p><h2>參數設計與繪圖</h2>
+<p><span></span></p>
+<h2>參數設計與繪圖</h2>
 <p>手足球系統的零組件參數設計與繪圖 (零組件初步設計繪圖)</p>
 <p>Onshape 零組件連結</p>
 <p><a href="https://cad.onshape.com/documents/2cc966a037073bad4c2e2769/w/446907d51186d2c31c8d8b90/e/a5bc1080e53d9efa9e22a820">https://cad.onshape.com/documents/2cc966a037073bad4c2e2769/w/446907d51186d2c31c8d8b90/e/a5bc1080e53d9efa9e22a820</a></p>
 <p>球檯繪圖</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/aSki1GWgBL4" width="560"></iframe></p>
 <p>繪製與組裝</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/NVC1umg9mR4" width="560"></iframe></p><h2>細部設計與 BOM</h2>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/NVC1umg9mR4" width="560"></iframe></p>
+<h2>細部設計與 BOM</h2>
 <p>完成手足球零組件細部設計 (可參考 <a href="https://youtu.be/PgnvZV5s13c">https://youtu.be/PgnvZV5s13c</a> 中各項設計), 並將設計 BOM (Bill of Materials) 納入 CMSimfly 網際內容管理系統. (系統 BOM 文件整理)</p>
 <p>手足球 DIY 影片:</p>
 <p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/PgnvZV5s13c" width="560"></iframe></p>
@@ -93,7 +95,8 @@
 <p>零件部分組裝圖</p>
 <h4>3D 零組件爆炸圖</h4>
 <p>3D 零組件爆炸圖</p>
-<p><img alt="" height="580" src="/images/3D爆炸圖.jpg" width="750"/></p><h1>V-rep 動態模擬</h1>
+<p><img alt="" height="580" src="/images/3D爆炸圖.jpg" width="750"/></p>
+<h1>V-rep 動態模擬</h1>
 <p>手足球系統中各球員擊球與操控桿移動旋轉的 V-rep 動態模擬 (系統功能模擬)</p>
 <p>以文字及操作影片說明如何從 Onshape 設計繪製零組件後, 如何轉入 V-rep, 如何編寫程式, 如何進行各種功能測試, 最後完成手足球的 V-rep 動態模擬系統.</p>
 <p>檔案位置：<a href="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/raw/gh-pages/TTT%E6%AA%94/Football.ttt">football table.ttt</a></p>
@@ -129,16 +132,247 @@
 <p>V-rep送球模擬</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Rbcy_draWrQ" width="560"></iframe></p>
 <h2>系統功能展示</h2>
-<p>手足球模擬系統功能展示 (模擬展示與說明影片)</p>
-<p>以下提供所完成的 V-rep 系統模擬影片與相關檔案下載連結</p>
-<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/Lc4GaaS7-jA" width="560"></iframe></p>
-<p>國立虎尾科技大學機械設計工程系 - 2019 Spring 第九週手足球運動模擬參考檔案</p>
-<p>足球員採用 Onshape 建立, 其他零組件採用 Solvespace 建立</p>
-<p>參考檔案位於: <a href="https://github.com/mdecourse/cd2019/tree/gh-pages/downloads/foosball_solvespace_vrep">https://github.com/mdecourse/cd2019/tree/gh-pages/downloads/foosball_solvespace_vrep</a></p>
-<p>V-rep 場景檔案: <a href="https://github.com/mdecourse/cd2019/blob/gh-pages/downloads/foosball_solvespace_vrep/kmol_foosball_w9.ttt">https://github.com/mdecourse/cd2019/blob/gh-pages/downloads/foosball_solvespace_vrep/kmol_foosball_w9.ttt</a></p>
-<p>以 V-rep 3.6.1 以上版本開啟檔案後執行, 鍵盤 a 與 d 鍵控制左右平移, w 與 s 鍵控制旋轉.</p>
-<p>書)</p>
-<h1>總結報告</h1>
+<h4>程式參考來自第3組網站與詢問第一.三組</h4>
+<h3>手足球雙人鍵盤對打</h3>
+<p>V-REP模擬結果<iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/_rg5RIhGJVw" width="560"></iframe></p>
+<p>PYTHON程式碼</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import vrep
+import keyboard
+from time import sleep
+import sys, math
+vrep.simxFinish(-1) 
+clientID = vrep.simxStart("127.0.0.1", 19997, True, True, 5000, 5)  
+KickBoV = 90   
+n=1
+L_KickBoV = (math.pi/180)*KickBoV
+R_KickBoV = -(math.pi/180)*KickBoV
+if clientID!= -1:  
+    print('connect successfully')
+else:
+    print('connect failed')
+    vrep.simxFinish(clientID)
+print('program ended')
+
+
+
+  
+errorCode,Sphere_handle=vrep.simxGetObjectHandle(clientID,'Sphere',vrep.simx_opmode_oneshot_wait)
+errorCode,Pole_handle=vrep.simxGetObjectHandle(clientID,'Pole',vrep.simx_opmode_oneshot_wait)
+errorCode,Revolute_handle=vrep.simxGetObjectHandle(clientID,'Revolute',vrep.simx_opmode_oneshot_wait)
+errorCode,Prismatic_handle=vrep.simxGetObjectHandle(clientID,'Prismatic',vrep.simx_opmode_oneshot_wait)
+errorCode,Revolute2_handle=vrep.simxGetObjectHandle(clientID,'Revolute2',vrep.simx_opmode_oneshot_wait)
+errorCode,Prismatic2_handle=vrep.simxGetObjectHandle(clientID,'Prismatic2',vrep.simx_opmode_oneshot_wait)
+errorCode,Pole2_handle=vrep.simxGetObjectHandle(clientID,'Pole2',vrep.simx_opmode_oneshot_wait)
+ 
+if errorCode == -1:
+    print('Can not find left or right motor')
+    sys.exit()
+     
+
+     
+def start():
+    errorCode = vrep.simxStartSimulation(clientID,vrep.simx_opmode_oneshot_wait)
+    while True:
+        try:
+            if keyboard.is_pressed('r'):
+                vrep.simxSetJointTargetVelocity(clientID,Revolute_handle,R_KickBoV,vrep.simx_opmode_oneshot_wait)
+            elif keyboard.is_pressed('t'):
+                vrep.simxSetJointTargetVelocity(clientID,Revolute_handle,L_KickBoV,vrep.simx_opmode_oneshot_wait)
+            elif keyboard.is_pressed('q'):
+                vrep.simxSetJointTargetVelocity(clientID,Prismatic_handle,0.05,vrep.simx_opmode_oneshot_wait)
+            elif keyboard.is_pressed('w'):
+                vrep.simxSetJointTargetVelocity(clientID,Prismatic_handle,0,vrep.simx_opmode_oneshot_wait)
+            elif keyboard.is_pressed('e'):
+                vrep.simxSetJointTargetVelocity(clientID,Prismatic_handle,-0.05,vrep.simx_opmode_oneshot_wait)
+             
+            elif keyboard.is_pressed('.'): 
+                vrep.simxSetJointTargetVelocity(clientID,Revolute2_handle,L_KickBoV,vrep.simx_opmode_oneshot_wait)
+            elif keyboard.is_pressed('/'):  
+                vrep.simxSetJointTargetVelocity(clientID,Revolute2_handle,R_KickBoV,vrep.simx_opmode_oneshot_wait)
+            elif keyboard.is_pressed('b'):  
+                vrep.simxSetJointTargetVelocity(clientID,Prismatic2_handle,0.05,vrep.simx_opmode_oneshot_wait)
+            elif keyboard.is_pressed('n'):  
+                vrep.simxSetJointTargetVelocity(clientID,Prismatic2_handle,0,vrep.simx_opmode_oneshot_wait)
+            elif keyboard.is_pressed('m'):  
+                vrep.simxSetJointTargetVelocity(clientID,Prismatic2_handle,-0.05,vrep.simx_opmode_oneshot_wait)
+            else:
+                pass
+        except:
+            break
+        
+start()
+</pre>
+<p></p><h3>手足球手控與電腦對打</h3>
+<p>V-REP模擬結果</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/UYMr74eoU1I" width="560"></iframe></p>
+<p>PYTHON程式碼</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import vrep
+import keyboard
+import  time 
+import sys, math
+vrep.simxFinish(-1) 
+clientID = vrep.simxStart("127.0.0.1", 19997, True, True, 5000, 5)  
+KickBoV = 360
+L_KickBoV = (math.pi/180)*KickBoV
+R_KickBoV = -(math.pi/180)*KickBoV
+if clientID!= -1:  
+    print('connect successfully')
+else:
+    print('connect failed')
+    vrep.simxFinish(clientID)
+print('program ended')
+    
+    
+    
+    
+err,Sphere_handle=vrep.simxGetObjectHandle(clientID,'Sphere',vrep.simx_opmode_oneshot_wait)
+err,Pole_handle=vrep.simxGetObjectHandle(clientID,'Pole',vrep.simx_opmode_oneshot_wait)
+err,Revolute_handle=vrep.simxGetObjectHandle(clientID,'Revolute',vrep.simx_opmode_oneshot_wait)
+err,Prismatic_handle=vrep.simxGetObjectHandle(clientID,'Prismatic',vrep.simx_opmode_oneshot_wait)
+err,Revolute2_handle=vrep.simxGetObjectHandle(clientID,'Revolute2',vrep.simx_opmode_oneshot_wait)
+err,Prismatic2_handle=vrep.simxGetObjectHandle(clientID,'Prismatic2',vrep.simx_opmode_oneshot_wait)
+err,Pole2_handle=vrep.simxGetObjectHandle(clientID,'Pole2',vrep.simx_opmode_oneshot_wait)
+ 
+
+
+if err == -1:
+    print('Can not find left or right motor')
+    sys.exit()
+    
+    
+    
+def speed(handle,speed):
+    err = vrep.simxSetJointTargetVelocity(clientID,handle,speed,vrep.simx_opmode_oneshot_wait)
+def start():
+    err=vrep.simxStartSimulation(clientID,vrep.simx_opmode_oneshot_wait)
+    while True:
+        err,position_LR=vrep.simxGetObjectPosition(clientID,Revolute2_handle,-1,vrep.simx_opmode_oneshot)
+        err,position_S=vrep.simxGetObjectPosition(clientID,Sphere_handle,-1,vrep.simx_opmode_oneshot)
+        err,position_RR=vrep.simxGetObjectPosition(clientID,Revolute_handle,-1,vrep.simx_opmode_oneshot)
+        LP =position_S[1] -position_LR[1] 
+        LPP =position_S[0] - position_LR[0]
+        print(position_S)
+        if LPP &gt;-0.015:
+            speed(Revolute2_handle,L_KickBoV)
+        elif LPP &lt;= -0.015:
+            speed(Revolute2_handle,R_KickBoV)
+        else:
+            pass
+        try:
+            if keyboard.is_pressed('r'):
+                vrep.simxSetJointTargetVelocity(clientID,Revolute_handle,R_KickBoV,vrep.simx_opmode_oneshot_wait)
+            elif keyboard.is_pressed('t'):
+                vrep.simxSetJointTargetVelocity(clientID,Revolute_handle,L_KickBoV,vrep.simx_opmode_oneshot_wait)
+            elif keyboard.is_pressed('q'):
+                vrep.simxSetJointTargetVelocity(clientID,Prismatic_handle,0.1,vrep.simx_opmode_oneshot_wait)
+            elif keyboard.is_pressed('w'):
+                vrep.simxSetJointTargetVelocity(clientID,Prismatic_handle,0,vrep.simx_opmode_oneshot_wait)
+            elif keyboard.is_pressed('e'):
+                vrep.simxSetJointTargetVelocity(clientID,Prismatic_handle,-0.1,vrep.simx_opmode_oneshot_wait)
+            else:
+                pass
+        except:
+            break
+        Pv = LP*2.5
+        vrep.simxSetJointTargetVelocity(clientID,Prismatic2_handle,Pv,vrep.simx_opmode_oneshot_wait)
+      
+        
+vrep.simxSetJointTargetVelocity(clientID,Prismatic_handle,0,vrep.simx_opmode_oneshot_wait)       
+vrep.simxSetJointTargetVelocity(clientID,Prismatic2_handle,0,vrep.simx_opmode_oneshot_wait)
+
+        
+        
+
+start()
+</pre>
+<p></p><h3>手足球電腦與電與對打</h3>
+<p>V-REP程式模擬結果</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/s92nquB7-m8" width="560"></iframe></p>
+<p>PYTHON程式碼</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import vrep
+import keyboard
+import  time 
+import sys, math
+vrep.simxFinish(-1) 
+clientID = vrep.simxStart("127.0.0.1", 19997, True, True, 5000, 5)  
+KickBoV = 360
+L_KickBoV = (math.pi/180)*KickBoV
+R_KickBoV = -(math.pi/180)*KickBoV
+if clientID!= -1:  
+    print('connect successfully')
+else:
+    print('connect failed')
+    vrep.simxFinish(clientID)
+print('program ended')
+    
+    
+    
+    
+
+err,Sphere_handle=vrep.simxGetObjectHandle(clientID,'Sphere',vrep.simx_opmode_oneshot_wait)
+err,Pole_handle=vrep.simxGetObjectHandle(clientID,'Pole',vrep.simx_opmode_oneshot_wait)
+err,Revolute_handle=vrep.simxGetObjectHandle(clientID,'Revolute',vrep.simx_opmode_oneshot_wait)
+err,Prismatic_handle=vrep.simxGetObjectHandle(clientID,'Prismatic',vrep.simx_opmode_oneshot_wait)
+err,Revolute2_handle=vrep.simxGetObjectHandle(clientID,'Revolute2',vrep.simx_opmode_oneshot_wait)
+err,Prismatic2_handle=vrep.simxGetObjectHandle(clientID,'Prismatic2',vrep.simx_opmode_oneshot_wait)
+err,Pole2_handle=vrep.simxGetObjectHandle(clientID,'Pole2',vrep.simx_opmode_oneshot_wait)
+ 
+
+if err == -1:
+    print('Can not find left or right motor')
+    sys.exit()
+    
+    
+    
+def speed(handle,speed):
+    err = vrep.simxSetJointTargetVelocity(clientID,handle,speed,vrep.simx_opmode_oneshot_wait)
+def start():
+    err=vrep.simxStartSimulation(clientID,vrep.simx_opmode_oneshot_wait)
+    while True:
+        err,position_LR=vrep.simxGetObjectPosition(clientID,Revolute2_handle,-1,vrep.simx_opmode_oneshot)
+        err,position_S=vrep.simxGetObjectPosition(clientID,Sphere_handle,-1,vrep.simx_opmode_oneshot)
+        err,position_RR=vrep.simxGetObjectPosition(clientID,Revolute_handle,-1,vrep.simx_opmode_oneshot)
+        LP =position_S[1] - position_LR[1] 
+        LPP =position_S[0] - position_LR[0]
+        RP =position_S[1] - position_RR[1] 
+        RPP =position_S[0] - position_RR[0]
+        print(position_S)
+        if LPP &lt;-0.015:
+            speed(Revolute2_handle,R_KickBoV)
+        elif LPP &gt;= -0.015:
+            speed(Revolute2_handle,L_KickBoV)
+        else:
+            pass
+        if RPP &gt;0.015:
+            speed(Revolute_handle, L_KickBoV)
+        elif RPP &lt;= 0.015:
+            speed(Revolute_handle,R_KickBoV)
+        else:
+            pass
+        Pv = LP*3
+        PPV=RP*3
+        vrep.simxSetJointTargetVelocity(clientID,Prismatic2_handle,Pv,vrep.simx_opmode_oneshot_wait)
+        vrep.simxSetJointTargetVelocity(clientID,Prismatic_handle,Pv,vrep.simx_opmode_oneshot_wait)
+vrep.simxSetJointTargetVelocity(clientID,Prismatic_handle,0,vrep.simx_opmode_oneshot_wait)       
+vrep.simxSetJointTargetVelocity(clientID,Prismatic2_handle,0,vrep.simx_opmode_oneshot_wait)
+        
+
+start()</pre>
+<p></p><h3>模擬問題與討論</h3>
+<p>在模擬上遇到的幾個問題</p>
+<p><span style="color: #000080;">1.開始模擬時桿子會自行移動</span></p>
+<p><img alt="" height="53" src="https://i.imgur.com/oySng9j.png" width="639"/></p>
+<p>給他初始速度為0即可靜止</p>
+<p><span style="color: #000080;">2.程式GO的時候 def SPEED發生錯誤</span></p>
+<p><img alt="" height="36" src="https://i.imgur.com/BsupclX.png" width="653"/></p>
+<p>給他定義值即可解錯</p>
+<p><span style="color: #000080;">3.開始模擬時桿子追蹤球的Y軸位置與球的Y軸路徑相反</span></p>
+<p><img alt="" height="505" src="https://i.imgur.com/wcZBNEa.png" width="725"/></p>
+<p>注意下放給定移動值的數值是否有負號，有的畫刪除即可，或是更改上方的正負關系即可</p>
+<p>4.無法擊球</p>
+<p><img alt="" height="214" src="https://i.imgur.com/NkN6Vwr.png" width="331"/></p>
+<p>若無法擊球可嘗試在距離潛在負號或是更改大小於關係即可</p>
+<p>5.注意程式裡與V-REP的軸名稱要相同</p><h1>總結報告</h1>
 <h2>專案口頭簡報</h2>
 <p>各組利用倉儲中的 Reveal.js 進行結案簡報 (結案口頭簡報)</p>
 <h2>專案報告書</h2>
@@ -192,7 +426,8 @@
 </div>
 <p>等他安裝完成</p>
 <p>完成後重新啟動可攜系統即可</p>
-<h4><strong></strong></h4><h1>w1~w10</h1>
+<h4><strong></strong></h4>
+<h1>w1~w10</h1>
 <p><a href="/downloads/手天使.stl">手足球</a></p>
 <p><a href="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4">ag4倉儲</a></p>
 <p><a href="https://cda2019ag4.blogspot.com/">blogger</a></p>
