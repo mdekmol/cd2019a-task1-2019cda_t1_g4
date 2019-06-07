@@ -56,14 +56,16 @@
 <p><span style="background-color: #ff9900;"><span>*為了使球能不因為速度過快而彈至軌道外，而將軌道坡度減緩至10度左右。</span></span></p>
 <p><span style="background-color: #ff9900;"><span><img alt="" height="385" src="/images/v.png" width="593"/></span></span></p>
 <p>8.送球機構</p>
-<p><span></span></p><h2>參數設計與繪圖</h2>
+<p><span></span></p>
+<h2>參數設計與繪圖</h2>
 <p>手足球系統的零組件參數設計與繪圖 (零組件初步設計繪圖)</p>
 <p>Onshape 零組件連結</p>
 <p><a href="https://cad.onshape.com/documents/2cc966a037073bad4c2e2769/w/446907d51186d2c31c8d8b90/e/a5bc1080e53d9efa9e22a820">https://cad.onshape.com/documents/2cc966a037073bad4c2e2769/w/446907d51186d2c31c8d8b90/e/a5bc1080e53d9efa9e22a820</a></p>
 <p>球檯繪圖</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/aSki1GWgBL4" width="560"></iframe></p>
 <p>繪製與組裝</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/NVC1umg9mR4" width="560"></iframe></p><h2>細部設計與 BOM</h2>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/NVC1umg9mR4" width="560"></iframe></p>
+<h2>細部設計與 BOM</h2>
 <p>完成手足球零組件細部設計 (可參考 <a href="https://youtu.be/PgnvZV5s13c">https://youtu.be/PgnvZV5s13c</a> 中各項設計), 並將設計 BOM (Bill of Materials) 納入 CMSimfly 網際內容管理系統. (系統 BOM 文件整理)</p>
 <p>手足球 DIY 影片:</p>
 <p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/PgnvZV5s13c" width="560"></iframe></p>
@@ -93,7 +95,8 @@
 <p>零件部分組裝圖</p>
 <h4>3D 零組件爆炸圖</h4>
 <p>3D 零組件爆炸圖</p>
-<p><img alt="" height="580" src="/images/3D爆炸圖.jpg" width="750"/></p><h1>V-rep 動態模擬</h1>
+<p><img alt="" height="580" src="/images/3D爆炸圖.jpg" width="750"/></p>
+<h1>V-rep 動態模擬</h1>
 <p>手足球系統中各球員擊球與操控桿移動旋轉的 V-rep 動態模擬 (系統功能模擬)</p>
 <p>以文字及操作影片說明如何從 Onshape 設計繪製零組件後, 如何轉入 V-rep, 如何編寫程式, 如何進行各種功能測試, 最後完成手足球的 V-rep 動態模擬系統.</p>
 <p>檔案位置：<a href="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/raw/gh-pages/TTT%E6%AA%94/Football.ttt">football table.ttt</a></p>
@@ -144,7 +147,56 @@
 <h2>專案報告書</h2>
 <p>各組完成 html 與 pdf 格式之手足球專案結案報告 (文字結案報告</p>
 <p></p>
-<p><a href="/downloads/ag4手足球專案結案報告.pdf">ag4手足球專案報告-1</a></p><h1>w1~w10</h1>
+<p><a href="/downloads/ag4手足球專案結案報告.pdf">ag4手足球專案報告-1</a></p>
+<h3>如何編輯報告書</h3>
+<p><span style="background-color: #ffcc00;">可參考</span>:<a href="https://mdecp2018.github.io/finalproject-bgx/content/Kmol-editor.html">https://mdecp2018.github.io/finalproject-bgx/content/Kmol-editor.html</a></p>
+<p>首先下載:<a href="https://drive.google.com/open?id=1lH3J-EETOpNruAz86Mi8A4PcKkgJOsh2">miktex_portable_and_pandoc.7z</a></p>
+<p>下載完成後解壓縮至隨身系統中(y槽中)</p>
+<p>完成後會多出<span style="background-color: #ffcc00;">兩個資料夾</span></p>
+<p>分別是 pandoc-2.4-windows-x86_64 和 miktex_portable</p>
+<p>接著用SciTE 開啟start.bat</p>
+<p>並在path=的最後方新增</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_290651">
+<table border="0" cellpadding="0" cellspacing="0" style="width: 531.6px;">
+<tbody>
+<tr style="height: 64px;">
+<td class="gutter" style="width: 24px; height: 64px;">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code" style="width: 504.6px; height: 64px;">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">%Disk%:\pandoc-2.4-windows-x86_64;%Disk%:\miktex_portable\texmfs\install\miktex\bin;</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>接著在<span style="background-color: #ffcc00;">cmd(小黑窗)</span>中輸入</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_910060">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">python -m pip install pandoc-fignos pandoc-tablenos pandoc-eqnos</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>等他安裝完成</p>
+<p>完成後重新啟動可攜系統即可</p>
+<h4><strong></strong></h4>
+<h1>w1~w10</h1>
 <p><a href="/downloads/手天使.stl">手足球</a></p>
 <p><a href="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4">ag4倉儲</a></p>
 <p><a href="https://cda2019ag4.blogspot.com/">blogger</a></p>
