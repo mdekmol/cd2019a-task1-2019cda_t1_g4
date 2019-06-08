@@ -132,7 +132,8 @@
 <p>Q：要如何得知球體目前的位置?</p>
 <p>A：使用指令<code class="py plain">number returnCode,number parentObjectHandle</code><code class="py keyword">=</code><code class="py plain">vrep.simxGetObjectParent(number clientID,number objectHandle,number operationMode)即可得知目前球體的座標位置</code></p>
 <h2>簡化模擬</h2>
-<p>首先在<span> onshape </span>將想要使用的零件圖或組合圖按照圖<span>1</span>出成<span>.stl </span>檔，再<span>v-rep </span>中開啟<span>.stl </span>檔<span> (</span>使用<span> [File</span>–<span>&gt;Import</span>–<span>&gt;Mash</span>…<span>])</span>，會出現如圖 <span>2</span>，依據個人所需去做點選，在按<span> OK </span>即可在視窗中導入模型。可以從圖<span>3</span>中看出，導入的模型是未分離的模型<span> (</span>如若是零件圖則不須此步驟<span>)</span>，所以我們使用</p>
+<p>首先在<span> onshape </span>將想要使用的零件圖或組合圖按照如圖<img alt="" height="160" src="/images/123456.png" width="285"/></p>
+<p>匯出成<span>.stl </span>檔，再<span>v-rep </span>中開啟<span>.stl </span>檔<span> (</span>使用<span> [File</span>–<span>&gt;Import</span>–<span>&gt;Mash</span>…<span>])</span>，會出現如圖 <span>2</span>，依據個人所需去做點選，在按<span> OK </span>即可在視窗中導入模型。可以從圖<span>3</span>中看出，導入的模型是未分離的模型<span> (</span>如若是零件圖則不須此步驟<span>)</span>，所以我們使用</p>
 <p>[Edit–<span>&gt;Grouping/Merging</span>–<span>&gt;Divideselectedshapes] </span>來將模型中的物件全都爆開，如圖 <span>4</span>。</p>
 <p>接下來說明桌檯簡化步驟，先來進桌檯的簡化，<span>(</span>使<span>[Edit&gt;CopyselectedObjects])</span>到一個新建的場景<span>(</span>使用<span>[File</span>–<span>&gt;Newscene])</span>， 再將人物貼上<span> (</span>使用<span> [Edit </span>–<span>&gt; Paste buffer])</span>。再點選頁面選擇器工具欄按鈕 ，如圖<span>6</span>，使得在簡化的過程中更容易點選，接著選取桌檯再點選形狀編輯模式工具欄按鈕來進行簡化如圖 <span>6</span>在此我框選桌檯，再點選簡化 的對話框 <span>Operations on selected triangles </span>中的<span> Extract cuboid</span>如圖 <span>7</span>，之後會出現<span> Primitive cuboid </span>的對話框並按下<span> OK </span>即會產生一個立方體如圖<span>8</span>，桌檯的簡化 就完成了</p>
 <p><span face="monospace" style="font-family: monospace;"> </span></p><h2>送球機構設計與模擬</h2>
