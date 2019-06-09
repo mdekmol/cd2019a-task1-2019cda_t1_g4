@@ -96,7 +96,7 @@
 <v t="leo.20190609220304.13"><vh>投影片快捷鍵</vh></v>
 </v>
 </v>
-<v t="leo.20190610010649.1"><vh>4.</vh>
+<v t="leo.20190610010649.1" a="E"><vh>4.</vh>
 <v t="leo.20190610010649.14" a="E"><vh>迴球機構</vh>
 <v t="leo.20190610010649.15"><vh>投影片快捷鍵</vh></v>
 </v>
@@ -105,6 +105,9 @@
 </v>
 <v t="leo.20190610010649.18" a="E"><vh>最終版本模擬</vh>
 <v t="leo.20190610010649.19"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20190610014600.1" a="E"><vh>最終版本模擬</vh>
+<v t="leo.20190610014600.2"><vh>投影片快捷鍵</vh></v>
 </v>
 </v>
 </v>
@@ -891,7 +894,7 @@ start()
 
 						
 </t>
-<t tx="leo.20190610010649.19">### 最終版本模擬
+<t tx="leo.20190610010649.19">### 第3版本模擬
 
  &lt;iframe width="720" height="405" src="https://www.youtube.com/embed/7tYCtVdMncM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
@@ -922,6 +925,20 @@ start()
 <t tx="leo.20190610011124.2">### BOM
 
 &lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://lh3.googleusercontent.com/kDRIVh7rumFHRrd6bmiFWH-Jn40f6weyHzN6QFQvvUvKowoQoPZdGR81jMZtv3_mSp4VAv2LPKL4Z83v2n6ZWrK0yGlqSSUViMpt2tFhOFKbOSMHNx-qI08iG6BdeZCfIJIwzzfRHvEn5981FCt1EDAaJeDOtjF38M7NMPBrWRrnGnhxjjNCKTkcfViHEgrNE0LPth49Sa4xXq8tf9qPq9TDR0n_XqAnXflYRO2coawbXUCo6x1fayIUzalfb9yVqaXxL8I-TVr7zt8cWtD_xXWeZhKTiTTwZRWZizK5I-reWYNFTQz7VFh5bY52nFlHYC0Ni0DkmmAvoq5i0-uSUQKRfLQe0tkNh1mYKJl3V_NF-7wiUcC-0bba0Mh35OZl-hI5kqnzVrhO2UIGTgZSkJsJlW4c_cMX-1bM75IbQnBWby4K7mD792eJ1flGwWBlpRryeQugrpeY4ZLtr7GGlLQCgq5uDHIE3_8woB7jUucDBtH3yewd9AYeNw7QVivmni2tMSDmk9gpxcVpvG8qkFXPkhqGeqEXzCMVCP39eAZI5kKydJf7GlzYB14LXOLgU3RMHsKV8EXTxt4r70QBPDOlzf9Zb-TEFpOgtek_iAo6bRIc71sRDUEpmYhYOz1nNd0CsjvMoyg4Ff_w8YOs8Ke5Gkhuo1Q=w1092-h844-no"height="550"width="720"&gt;
+
+</t>
+<t tx="leo.20190610014600.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190610014600.2">### 最終版本模擬
+
+ &lt;iframe width="720" height="405" src="https://www.youtube.com/embed/CfAQaw6XRGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 </t>
 </tnodes>
