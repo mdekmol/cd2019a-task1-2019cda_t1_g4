@@ -97,7 +97,7 @@
 </v>
 </v>
 <v t="leo.20190610010649.1" a="E"><vh>4.</vh>
-<v t="leo.20190610010649.14"><vh>迴球機構</vh>
+<v t="leo.20190610010649.14" a="E"><vh>迴球機構</vh>
 <v t="leo.20190610010649.15"><vh>投影片快捷鍵</vh></v>
 </v>
 <v t="leo.20190616143757.1" a="E"><vh>迴球機構</vh>
@@ -398,7 +398,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20190609200121.3">### 1.手足球桌檯設計與繪圖
 
 
-第一版設計  &lt;img style="-webkit-user-select: none;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/reveal1.png
+第一版設計  &lt;img style="-webkit-user-select: none;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/reveal1.png?raw=true
 "height="450"width="500"&gt; 
 
 
@@ -414,7 +414,7 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20190609200121.5">### 最終版設計
 
-&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/reveal7.png"height="550"width="720"&gt;
+&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/reveal7.png?raw=true"height="550"width="720"&gt;
 
 </t>
 <t tx="leo.20190609213002.1">&lt;section data-markdown&gt;
@@ -429,7 +429,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20190609213002.2">### 升降台設計因無機關可上升故不採用
 
 
- &lt;img style="-webkit-user-select: none;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/reveal4.png"height="450"width="200"&gt;  
+ &lt;img style="-webkit-user-select: none;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/reveal4.png?raw=true"height="450"width="200"&gt;  
 
 
 
@@ -445,7 +445,7 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20190609214516.2">### 軌道閘門設計
 
-&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/reveal3.jpg"height="300"width="450"&gt;  
+&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/reveal3.jpg?raw=true"height="300"width="450"&gt;  
 
 </t>
 <t tx="leo.20190609214717.1">&lt;section data-markdown&gt;
@@ -459,7 +459,7 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20190609214717.2">### 球桌
 
-&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/Table-2.jpg"height="550"width="720"&gt;
+&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/Table-2.jpg?raw=true"height="550"width="720"&gt;
 
 
 
@@ -475,7 +475,7 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20190609214724.2">### 回球機構
 
-&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/Marble Machine.jpg"height="550"width="720"&gt;
+&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/Marble%20Machine.jpg?raw=true"height="550"width="720"&gt;
 
 </t>
 <t tx="leo.20190609214742.1">&lt;section data-markdown&gt;
@@ -489,7 +489,7 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20190609214742.2">### 手桿
 
-&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/Shaft-2.jpg"height="550"width="720"&gt;
+&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/Shaft-2.jpg?raw=true"height="550"width="720"&gt;
 
 </t>
 <t tx="leo.20190609214748.1">&lt;section data-markdown&gt;
@@ -503,7 +503,7 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20190609214748.2">### 球員
 
-&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/Doll-2.jpg"height="550"width="720"&gt;
+&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/Doll-2.jpg?raw=true"height="550"width="720"&gt;
 
 </t>
 <t tx="leo.20190609215545.1">&lt;section data-markdown&gt;
@@ -517,7 +517,7 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20190609215545.2">### 回球機構-轉輪
 
-&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/Turntable-2.jpg"height="550"width="720"&gt;
+&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/Turntable-2.jpg?raw=true"height="550"width="720"&gt;
 
 </t>
 <t tx="leo.20190609220304.1">&lt;section&gt;
@@ -843,7 +843,7 @@ start()
 </t>
 <t tx="leo.20190609231303.2">### 第二版設計
 
-&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/reveal5.png"height="580"width="720"&gt;  
+&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/reveal5.png?raw=true"height="580"width="720"&gt;  
 
 </t>
 <t tx="leo.20190609231435.1">&lt;section data-markdown&gt;
@@ -858,7 +858,7 @@ start()
 <t tx="leo.20190609231435.2">### 第二版設計
 
 因此設計會擋住手桿位置
-故不採用&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/reveal6.png"height="300"width="1000"&gt;  
+故不採用&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/reveal6.png?raw=true"height="300"width="1000"&gt;  
 
 </t>
 <t tx="leo.20190610010649.1">&lt;section&gt;
@@ -880,7 +880,7 @@ start()
 <t tx="leo.20190610010649.15">### 3.迴球、送球機構設計模擬
 
 手足球迴球機構設計
-&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/reveal7.png"height="500"width="690"&gt;
+&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/reveal7.png?raw=true"height="500"width="690"&gt;
 
 
 </t>
@@ -923,7 +923,7 @@ start()
 </t>
 <t tx="leo.20190610011121.2">### 3D爆炸圖
 
-&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/3D爆炸圖.jpg"height="550"width="720"&gt;
+&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/3D%E7%88%86%E7%82%B8%E5%9C%96.jpg?raw=true"height="550"width="720"&gt;
 
 </t>
 <t tx="leo.20190610011124.1">&lt;section data-markdown&gt;
@@ -937,7 +937,7 @@ start()
 </t>
 <t tx="leo.20190610011124.2">### BOM
 
-&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/BOM-2.jpg"height="550"width="720"&gt;
+&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/BOM-2.jpg?raw=true"height="550"width="720"&gt;
 
 </t>
 <t tx="leo.20190610014600.1">&lt;section data-markdown&gt;
@@ -981,7 +981,7 @@ start()
 <t tx="leo.20190616143024.2">### 手足球迴球機構設計
 
 
-&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/AOO.png"height="500"width="690"&gt;
+&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/AOO.png?raw=true"height="500"width="690"&gt;
 
 </t>
 <t tx="leo.20190616143757.1">&lt;section data-markdown&gt;
@@ -996,7 +996,7 @@ start()
 <t tx="leo.20190616143757.2">### 手足球迴球機構設計
 
 
-&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/v.png"height="500"width="690"&gt;
+&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/v.png?raw=true"height="500"width="690"&gt;
 
 </t>
 <t tx="leo.20190616143842.1">&lt;section data-markdown&gt;
@@ -1011,7 +1011,7 @@ start()
 <t tx="leo.20190616143842.2">### 手足球迴球機構設計
 
 
-&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="file:///F:/協同產品設計/kmol_2019/data/tmp/cd2019a-task1-2019cda_t1_g4/images/AOW.png"height="500"width="690"&gt;
+&lt;img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/mdekmol/cd2019a-task1-2019cda_t1_g4/blob/gh-pages/images/AOW.png?raw=true"height="500"width="690"&gt;
 
 </t>
 </tnodes>
